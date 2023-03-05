@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BFEBFF"
+    android:background="#2B0175"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".TercerFragment">
@@ -14,8 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textColor="@color/white"
         android:text="Tercer Fragment"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
     <Button
@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Ir a Fragment 4" />
+        android:text="Ir a Fragment 4"
+        android:textColor="@color/white" />
 
 </LinearLayout>
