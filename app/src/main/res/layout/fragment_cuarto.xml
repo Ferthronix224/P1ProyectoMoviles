@@ -1,37 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#013C37"
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context=".CuartoFragment">
 
-    <TextView
-        android:id="@+id/txt_output"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Cuarto Fragment"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
-
     <Button
-        android:id="@+id/btn_navegar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Volver a Fragment 1"
-        android:textColor="@color/white" />
+        android:id="@+id/back"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add" />
 
-    <Button
-        android:id="@+id/salir"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Salir"
-        android:textColor="@color/white" />
+        android:layout_height="match_parent"
+        android:background="@drawable/gasol"
+        android:gravity="top"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/txt_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Gasolineras"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:background="@drawable/coming"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/Coming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Coming Soon!"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -5,22 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.os.bundleOf
+import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.setFragmentResultListener
 import androidx.navigation.fragment.findNavController
 
 class SegundoFragment : Fragment(R.layout.fragment_segundo) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val button = view.findViewById<Button>(R.id.btn_navegar)
-        val resultado = view.findViewById<TextView>(R.id.txt_output)
+        val button = view.findViewById<Button>(R.id.back)
         button.setOnClickListener {
-            findNavController().navigate(R.id.action_segundoFragment_to_tercerFragment)
-        }
-
-        setFragmentResultListener("requestKey") { key, bundle ->
-            val result = bundle.getString("bundleKey")
-            resultado.text = result
+            val result = "Consultó Policía"
+            setFragmentResult("requestKey", bundleOf("bundleKey" to result))
+            findNavController().navigate(R.id.action_segundoFragment_to_menuFragment)
         }
     }
-
 }

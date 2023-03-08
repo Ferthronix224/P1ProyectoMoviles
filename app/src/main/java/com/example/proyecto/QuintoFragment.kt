@@ -8,14 +8,18 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.navigation.fragment.findNavController
 
-class TercerFragment : Fragment(R.layout.fragment_tercer) {
+class QuintoFragment : Fragment(R.layout.fragment_quinto) {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val button = view.findViewById<Button>(R.id.back)
         button.setOnClickListener {
-            val result = "Consultó Restaurantes"
+            val result = "Consultó Mantenimiento"
             setFragmentResult("requestKey", bundleOf("bundleKey" to result))
-            findNavController().navigate(R.id.action_tercerFragment_to_menuFragment)
+            findNavController().navigate(R.id.action_quintoFragment_to_menuFragment)
         }
     }
 }

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SegundoFragment">
+    tools:context=".OctavoFragment">
 
     <Button
         android:id="@+id/back"
@@ -17,7 +17,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/policia"
+        android:background="@drawable/ferreterias"
         android:gravity="top"
         android:orientation="vertical">
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Policía"
+            android:text="Ferreterías"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="40sp" />
