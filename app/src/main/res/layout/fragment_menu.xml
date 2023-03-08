@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MenuFragment">
 
     <TextView
@@ -16,85 +16,85 @@
 
     <TextView
         android:id="@+id/mensaje"
-        android:textSize="20dp"
-        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textSize="20dp"
+        android:textStyle="italic" />
 
     <Button
         android:id="@+id/servicios_medicos"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Servicios Médicos"
         android:backgroundTint="#0087FF"
-        android:textStyle="bold"/>
+        android:text="Servicios Médicos"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/policia"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Policia"
         android:backgroundTint="#0087FF"
-        android:textStyle="bold"/>
+        android:text="Policia"
+        android:textStyle="bold" />
 
 
     <Button
         android:id="@+id/restaurantes"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Restaurantes"
         android:backgroundTint="#0087FF"
-        android:textStyle="bold"/>
+        android:text="Restaurantes"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/gasolineras"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Gasolineras"
         android:backgroundTint="#0087FF"
-        android:textStyle="bold"/>
+        android:text="Gasolineras"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/mantenimiento"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Mantenimiento"
         android:backgroundTint="#0087FF"
-        android:textStyle="bold"/>
+        android:text="Mantenimiento"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/limpieza"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Limpieza"
         android:backgroundTint="#0087FF"
-        android:textStyle="bold"/>
+        android:text="Limpieza"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/vulcanizadora"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Vulcanizadoras"
         android:backgroundTint="#0087FF"
-        android:textStyle="bold"/>
+        android:text="Vulcanizadoras"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/ferreterias"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Ferreterias"
         android:backgroundTint="#0087FF"
-        android:textStyle="bold"/>
+        android:text="Ferreterias"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/salir"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Salir"
         android:backgroundTint="#FF0000"
-        android:textStyle="bold"/>
+        android:text="Salir"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

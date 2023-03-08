@@ -9,7 +9,7 @@
         android:id="@+id/back"
         android:layout_width="80px"
         android:layout_height="80px"
-        android:background="@drawable/back"/>
+        android:background="@drawable/back" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -26,15 +26,15 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="Restaurantes"
-            android:textStyle="bold"
             android:textColor="@color/white"
-            android:textSize="40sp" />
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="200dp"
             android:layout_height="300dp"
-            android:background="@drawable/coming"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@drawable/coming" />
 
         <TextView
             android:id="@+id/Coming"
@@ -43,9 +43,9 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="Coming Soon!"
-            android:textStyle="bold"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </FrameLayout>
